@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para mi amada Sara Camila</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffafbd, #ffc3a0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #e63946;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d62839;
+    }
+
+    .carta {
+      display: none;
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin-top: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .firma {
+      text-align: right;
+      margin-top: 40px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Una carta para ti, Sara</h1>
+  <button onclick="mostrarCarta()">Haz clic para leer tu carta</button>
+
+  <div id="carta" class="carta">
+    <p>
+      Tú no sabes cuánto te amo. Dios mío, te adoro con todo mi corazón. Cada vez que estás a mi lado, verte me alegra el día, sentir tu abrazo es encontrar mi lugar seguro. Eres mi esperanza, mi fuerza para seguir adelante. No importa cuántos estén alrededor, yo solo te quiero a ti. Siempre tú.
+    </p>
+
+    <p>
+      Eres mi primer amor, mi presente más bonito y mi sueño más constante. Y aunque he cometido errores, quiero enmendarlos, abrazarte con sinceridad y reconstruir cada parte de lo nuestro con amor. No quiero dejar nada a medias contigo. Quiero hacerlo bien, por ti, por nosotros.
+    </p>
+
+    <p>
+      Quiero que me mires como antes, que rías conmigo como lo hacías, que volvamos a crear recuerdos que duren para siempre. Quiero que confíes en mí como antes, que no haya miedos ni dudas, solo tú y yo siendo felices.
+    </p>
+
+    <p>
+      Quiero ser quien celebre tus triunfos como si fueran míos, quien te abrace en tus días difíciles, quien te haga sentir en paz cuando el mundo se vuelva ruido. Sí, yo. Porque tú, Sara, me enseñaste a amar, a valorar, a sentir de verdad. Y no pienso rendirme por ti.
+    </p>
+
+    <p>
+      Sé que somos jóvenes, pero estoy seguro de algo: quiero que seas tú la historia más bonita que pueda contar. Quiero escribir el libro de mi vida contigo. Que seas tú la protagonista de cada página, de cada risa, de cada locura, de cada abrazo. Porque tú, Sara, eres única. Mi lugar favorito.
+    </p>
+
+    <p>
+      Te prometo que haré lo que esté en mis manos para que esta historia no termine aquí. Te amo con la certeza de quien no quiere mirar atrás. Te amo en presente, y deseo amarte en futuro, por muchos años más.
+    </p>
+
+    <div class="firma">
+      Con todo mi amor,<br>
+      Tuyo por siempre 💖
+    </div>
+  </div>
+
+  <script>
+    function mostrarCarta() {
+      document.getElementById("carta").style.display = "block";
+    }
+  </script>
+</body>
+</html>
